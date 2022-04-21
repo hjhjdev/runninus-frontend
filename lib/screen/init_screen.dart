@@ -15,8 +15,8 @@ class _InitScreenState extends State<InitScreen> {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Text('RunninUs',
-            ),
+            Image.asset('asset/img/main.png'),
+            Text('RunninUs'),
             CircularProgressIndicator(
               color: Colors.blue,
             ),
