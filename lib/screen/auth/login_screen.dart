@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 
-class InitScreen extends StatefulWidget {
-  const InitScreen({Key? key}) : super(key: key);
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({Key? key}) : super(key: key);
 
-  @override
-  State<InitScreen> createState() => _InitScreenState();
-}
-
-class _InitScreenState extends State<InitScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,9 +11,9 @@ class _InitScreenState extends State<InitScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Image.asset('asset/img/main.png'),
-            Text('RunninUs'),
-            CircularProgressIndicator(
-              color: Colors.blue,
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Image.asset('asset/img/kakao_login.png'),
             ),
           ],
         ));
